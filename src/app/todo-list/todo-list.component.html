@@ -1,0 +1,36 @@
+<div class="container">
+  <h1>Lista de Tareas</h1>
+
+  <div class="todo-input">
+    <input
+      class="input"
+      type="text"
+      placeholder="Agregar nueva tarea..."
+      [formControl]="inputNewTodo"
+    />
+    <button (click)="addTodo(inputNewTodo.value)" class="add-button">Agregar</button>
+  </div>
+
+  <ul class="todo-list">
+    @for (todo of todos(); track $index) {
+      <li class="todo-item"  [ngClass]="{ 'complete': todo.state === 'complete' }">
+        <div>
+          <span>{{ todo.todo }}</span>
+          <span class="state">{{ todo.state }}</span>
+        </div>
+
+        <div>
+          <button
+            (click)="completeTodo(todo)"
+            class="complete-btn"
+            [disabled]="todo.state === 'complete'"
+          >
+            Completar
+          </button>
+
+          <button (click)="deleteTodo(todo)" class="delete-btn">Eliminar</button>
+        </div>
+      </li>
+    }
+  </ul>
+</div>

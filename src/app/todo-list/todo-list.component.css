@@ -1,0 +1,85 @@
+.container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+button {
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.add-button {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 12px;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list .todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  padding: 5px;
+}
+
+.delete-btn:hover {
+  background: rgb(190, 0, 0);
+}
+
+.complete-btn {
+  background: rgb(221, 206, 2);
+  color: rgb(29, 29, 29);
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.complete-btn:hover {
+  background: rgb(245, 228, 0);
+}
+
+.complete-btn:disabled {
+  background: rgb(221, 221, 221);
+}
+
+.state {
+  margin-left: 10px;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: gray;
+}
