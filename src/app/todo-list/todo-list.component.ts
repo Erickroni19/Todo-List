@@ -1,6 +1,6 @@
 import { Component, computed } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { TodoListService } from '../todo-list.service';
+import { TodoListService } from '../services/todo-list.service';
 import { CommonModule } from '@angular/common';
 import { Todo } from '../interface/Todos.interface';
 

@@ -75,10 +75,6 @@ button {
   background: rgb(221, 221, 221);
 }
 
-.state {
-  margin-left: 10px;
-}
-
 .complete {
   text-decoration: line-through;
   color: gray;

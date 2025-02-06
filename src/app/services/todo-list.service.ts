@@ -1,5 +1,5 @@
 import { computed, Injectable, signal } from '@angular/core';
-import { Todo } from './interface/Todos.interface';
+import { Todo } from '../interface/Todos.interface';
 
 @Injectable({
   providedIn: 'root'
